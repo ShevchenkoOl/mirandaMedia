@@ -1,0 +1,50 @@
+@use'variables';
+.image-container {
+    display: flex;
+    justify-items: center;
+    padding: 40px;
+    align-items: center; 
+}
+
+.image-list{
+  display: flex;              
+  flex-direction: row;     
+  justify-content: center;    
+  align-items: center;
+  text-align: center;
+
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+.image-item {
+  width: 400px;
+  height: 400px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;              
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;
+  text-align: center; 
+}
+
+.bg1{
+    background-image: url(../images/image1.png);
+}
+
+.bg2{
+    background-image: url(../images/image2.jpg);
+}
+
+.bg3{
+    background-image: url(../images/image3.jpg);
+}
+
+.text-box{
+    width: 270px;
+    color: variables.$whiteColor;
+}

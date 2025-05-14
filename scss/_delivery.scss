@@ -1,0 +1,31 @@
+@use "variables";
+
+.delivery-section {
+  margin: 300px auto 0 auto;
+  padding: 40px 20px;
+}
+
+.delivery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery-item {
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  gap: 15px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.delivery-img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}

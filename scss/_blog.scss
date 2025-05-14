@@ -1,0 +1,99 @@
+@use "variables";
+
+.section-blog {
+height: 300px;
+text-align: center;
+padding: 40px;
+background-color: variables.$textColor;
+color: variables.$whiteColor;
+position: relative; 
+padding: 40px;
+background-color: variables.$textColor;
+color: variables.$whiteColor;
+}
+
+.text-h2 {
+    font-size: 36px;
+}
+
+.blog-link{
+color: variables.$whiteColor;
+font-size: 36px;
+}
+
+.blog-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.blog-item {
+    width: 460px;
+    height: 200px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.blog-link::after {
+  content: '→';
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-item:hover,
+.blog-item:focus {
+  background-image: none;
+  background-color: rgba(236, 178, 53, 0.9);
+}
+
+.bg-blog1 {
+background-image: url(../images/blog1.jpg);
+ width: 100%;
+}
+
+.bg-blog2 {
+background-image: url(../images/blog2.jpg);
+ width: 100%;
+}
+.bg-blog3 {
+background-image: url(../images/blog3.jpg);
+ width: 100%;
+}
+.bg-blog4 {
+background-image: url(../images/blog4.jpg);
+ width: 100%;
+}
+.bg-blog5 {
+background-image: url(../images/blog5.jpg);
+}
+
+.blog-item:nth-child(1), .blog-item:nth-child(2), .blog-item:nth-child(3) {
+  width: 30%;
+}
+
+
+.blog-item:nth-child(4) {
+  width: 28%; 
+  height: 200px;
+}
+
+.blog-item:nth-child(5) {
+  width: 65%;
+  height: 200px;
+}
+
+.btn-blog {
+right: 45px;    
+}

@@ -1,0 +1,166 @@
+@use "variables";
+
+.headr-section {
+  height: 122px;
+  display: flex;
+  align-items: center;
+  color: variables.$textColor;
+  padding: 0 40px;
+}
+
+.logo-container {
+  width: 223px;
+  height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: variables.$borderColor;
+  border-radius: variables.$borderRadius;
+  border: 1px solid variables.$borderColor;
+}
+.navBar-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 20px;
+}
+.navBar {
+  padding: 10px 20px;
+
+  .navVar-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+
+    .navBar_item {
+      position: relative;
+
+      .navBar_link {
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+
+        &:hover {
+          color: variables.$hoverColor;
+          border-radius: variables.$borderRadius;
+        }
+      }
+
+      .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-radius: variables.$borderRadius;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        padding: 10px 0;
+        list-style: none;
+        min-width: 160px;
+        z-index: 100;
+
+        .submenu_item {
+          .submenu_link {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+
+            &:hover {
+              color: variables.$hoverColor;
+              background-color: variables.$borderColor;
+            }
+          }
+        }
+      }
+
+      &:hover .submenu {
+        display: block;
+      }
+    }
+  }
+}
+
+.dropdown-icon {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid variables.$borderColor;
+  padding-bottom: 5px;
+  max-width: 300px;
+
+  .search_icon {
+    position: absolute;
+    left: 0;
+    color: variables.$borderColor;
+    pointer-events: none;
+  }
+
+  .search_input {
+    width: 100%;
+    padding-left: 28px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+
+    &::placeholder {
+      color: variables.$borderColor;
+      opacity: 1;
+      font-weight: bold;
+    }
+  }
+}
+
+.currency-select {
+  padding: 8px 12px;
+  border: none;
+  border-radius: variables.$borderRadius;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: variables.$hoverColor;
+  }
+}
+
+.basket-num{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid variables.$textColor;
+}
+
+// @media (max-width: 760px) {
+//   .hamburger {
+//     display: flex;
+//   }
+
+//   .list {
+//     flex-direction: column;
+//     display: none;
+//     position: absolute;
+//     top: 90px;
+//     right: 70px;
+//     background-color: rgb(114, 62, 62);
+//     width: 200px;
+//     padding-left: 20px;
+//     border-radius: 10px;
+//   }
+
+//   nav ul li:not(:last-child) {
+//     margin-bottom: 20px;
+//   }
+// }

@@ -1,0 +1,74 @@
+@use "variables";
+
+.section-offer {
+height: 300px;
+text-align: center;
+padding: 40px;
+background-color: variables.$textColor;
+color: variables.$whiteColor;
+
+ position: relative; 
+ 
+  padding: 40px;
+  background-color: variables.$textColor;
+  color: variables.$whiteColor;
+}
+
+.text-h2 {
+    font-size: 36px;
+}
+
+.offer-link{
+color: variables.$whiteColor;
+font-size: 36px;
+}
+
+.offer-list {
+display: flex;
+justify-content: center;
+}
+
+.offer-item {
+    width: 290px;
+    height: 431px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.offer-link::after {
+  content: '→';
+  font-size: 26px;
+  font-weight: 600;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.offer-item:hover,
+.offer-item:focus {
+  background-image: none;
+  background-color: rgba(236, 178, 53, 0.9);
+}
+
+.bg-item1 {
+background-image: url(../images/bg1.jpg);
+}
+
+.bg-item2 {
+background-image: url(../images/bg2.jpg);
+}
+.bg-item3 {
+background-image: url(../images/bg3.jpg);
+}
+.bg-item4 {
+background-image: url(../images/bg4.jpg);
+}

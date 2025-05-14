@@ -1,0 +1,67 @@
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: variables.$textColor;
+  text-decoration: none;
+}
+
+ul{
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: variables.$borderRadius;
+    background-color: variables.$borderColor;
+    border: 1px solid variables.$borderColor;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+   background-color: variables.$hoverColor;
+   border: 1px solid variables.$hoverColor; 
+   color: variables.$whiteColor;
+  }
+
+.general-text {
+margin-top: 10px;
+margin-bottom: 30px;
+font-size: 36px;
+}
+
+.text-h2 {
+font-size: 22px;
+margin-bottom: 30px;
+}
+
+.btn-offer {
+  position: absolute;
+  right: 40px;    
+  bottom: -270px;
+  width: 243px;
+  height: 90px;
+  font-size: 24px;
+  border-radius: variables.$borderRadius;
+    background-color: variables.$hoverImage;
+    border: 1px solid variables.$hoverImage;
+    transition: all 0.3s ease;
+}
+
+.btn-offer:hover,
+.btn-offer:focus {
+  background-color: rgb(167, 195, 5);
+    border: 1px solid rgb(167, 195, 5);
+    color: variables.$whiteColor;
+}
