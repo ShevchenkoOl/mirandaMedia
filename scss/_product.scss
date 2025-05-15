@@ -4,6 +4,7 @@
   width: 1250px;
   margin: 300px auto 0 auto;
   padding: 40px 20px;
+
 }
 
 .product-tabs {
@@ -26,19 +27,70 @@
   border-bottom: 2px solid gold;
 }
 
+.text-h3 {
+  margin-bottom: 20px;
+}
 
 .products-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
 
 .product-card {
+  position: relative;
+  padding: 10px;
   border: 1px solid #ddd;
-  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: border-color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    border-color: rgb(39, 39, 39);
+  }
+}
+
+.flags {
+  position: absolute;
+  top: 10px;
+  right: 10px; // ← заменили left: 10px на right: 10px
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.flag {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+}
+
+
+.flag.novinka {
+  background-color: green;
+}
+
+.flag.vyprodej {
+  background-color: red;
+}
+
+.product-card p:first-of-type {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.product-card p:nth-of-type(2) {
+  width: 100%;
+  text-align: left;
+  margin: 0;
 }
 
 .product-card img {
@@ -52,3 +104,20 @@
   margin: 30px 0;
 }
 
+.availability-in-stock {
+  color: green;
+}
+
+.availability-on-order {
+  color: gray;
+}
+
+.availability-unavailable {
+  color: red;
+}
+
+.btn-wrapper {
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+}

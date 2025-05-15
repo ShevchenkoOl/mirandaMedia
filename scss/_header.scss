@@ -1,16 +1,21 @@
 @use "variables";
 
-.headr-section {
-  height: 122px;
-  display: flex;
-  align-items: center;
-  color: variables.$textColor;
-  padding: 0 40px;
+.header {
+  padding: 20px 0;
 }
 
-.logo-container {
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.logo {
   width: 223px;
   height: 66px;
+
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
 
   display: flex;
   align-items: center;
@@ -20,128 +25,110 @@
   border-radius: variables.$borderRadius;
   border: 1px solid variables.$borderColor;
 }
-.navBar-section{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 20px 20px;
-}
-.navBar {
-  padding: 10px 20px;
 
-  .navVar-list {
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  .nav-list {
     list-style: none;
     display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
+    gap: 40px;
 
-    .navBar_item {
+    .nav-item {
       position: relative;
-
-      .navBar_link {
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
-        font-size: 14px;
-        font-weight: bold;
-
-        &:hover {
-          color: variables.$hoverColor;
-          border-radius: variables.$borderRadius;
-        }
-      }
+     .nav-link:hover,
+     .nav-link:focus {
+  color: variables.$hoverColor;
+}
 
       .submenu {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
+
         border-radius: variables.$borderRadius;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
         padding: 10px 0;
-        list-style: none;
         min-width: 160px;
         z-index: 100;
 
-        .submenu_item {
-          .submenu_link {
+        .submenu-item {
+          .submenu-link {
             display: block;
             padding: 8px 16px;
-            text-decoration: none;
 
-            &:hover {
-              color: variables.$hoverColor;
+            &:hover,
+            &:focus {
               background-color: variables.$borderColor;
             }
           }
         }
       }
 
-      &:hover .submenu {
+      &:hover .submenu,
+      &:focus .submenu {
         display: block;
       }
     }
   }
 }
 
-.dropdown-icon {
-  margin-left: 6px;
-  vertical-align: middle;
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 70px;
 }
 
 .search {
-  position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid variables.$borderColor;
-  padding-bottom: 5px;
-  max-width: 300px;
+  border-bottom: 1px solid #ccc;
+}
 
-  .search_icon {
-    position: absolute;
-    left: 0;
-    color: variables.$borderColor;
-    pointer-events: none;
-  }
+.search input {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+}
 
-  .search_input {
-    width: 100%;
-    padding-left: 28px;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 14px;
-
-    &::placeholder {
-      color: variables.$borderColor;
-      opacity: 1;
-      font-weight: bold;
-    }
-  }
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
 }
 
 .currency-select {
-  padding: 8px 12px;
   border: none;
-  border-radius: variables.$borderRadius;
-  font-size: 14px;
+  background: transparent;
+  font-weight: 500;
   cursor: pointer;
+}
 
-  &:focus {
-    outline: none;
-    border-color: variables.$hoverColor;
-  }
+.nav-link:hover,
+.nav-link:focus {
+  color: variables.$hoverColor;
+}
+
+.basket-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .basket-num{
-  width: 20px;
-  height: 20px;
+  width: 24px;
   text-align: center;
+  color: rgb(178, 178, 178);
   border-radius: 50%;
-  border: 1px solid variables.$textColor;
+  border: 1px solid rgb(178, 178, 178);
 }
+
 
 // @media (max-width: 760px) {
 //   .hamburger {

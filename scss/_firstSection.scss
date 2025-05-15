@@ -1,4 +1,5 @@
 @use "variables";
+
 .first-container {
   width: 100%;
   height: 500px;
@@ -13,13 +14,40 @@
   text-align: center;      
 }
 
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 150px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: variables.$whiteColor;
+}
+
 .text-container {
-width: 500px;
+width: 600px;
 height: 254px;
 color: variables.$whiteColor;
 }
 
 .first-text{
-text-transform: uppercase;
-letter-spacing: 6px; 
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 3.24px;
+  
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
 }

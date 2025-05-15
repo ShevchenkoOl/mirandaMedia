@@ -1,7 +1,6 @@
 @use "variables";
 
 .delivery-section {
-  margin: 300px auto 0 auto;
   padding: 40px 20px;
 }
 
@@ -22,6 +21,11 @@
   font-size: 18px;
   line-height: 1.4;
   text-align: left;
+  
+}
+
+.delivery-item:not(:last-child) {
+  border-right: 1px solid black;
 }
 
 .delivery-img {

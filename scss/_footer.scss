@@ -50,3 +50,11 @@
   margin-right: 10px;
   fill: currentColor;
 }
+
+.footer-logo {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}

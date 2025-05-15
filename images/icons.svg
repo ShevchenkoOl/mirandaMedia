@@ -1,26 +1,31 @@
-<!-- icons.svg -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="icon-user" viewBox="0 0 32 32">
-    <path d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 20c-5.33 0-16 2.667-16 8v4h32v-4c0-5.333-10.67-8-16-8z"/>
-  </symbol>
-
-  <symbol id="icon-envelop" viewBox="0 0 32 32">
-    <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"/>
-  </symbol>
-
-  <symbol id="icon-lock" viewBox="0 0 32 32">
-    <path d="M24 14h-1v-4c0-4.418-3.582-8-8-8s-8 3.582-8 8v4h-1c-1.105 0-2 0.895-2 2v14c0 1.105 0.895 2 2 2h18c1.105 0 2-0.895 2-2v-14c0-1.105-0.895-2-2-2zM11 10c0-2.209 1.791-4 4-4s4 1.791 4 4v4h-8v-4z"/>
-  </symbol>
-
-   <symbol id="search_icon" viewBox="0 0 32 32">
-    <path d="M24 14h-1v-4c0-4.418-3.582-8-8-8s-8 3.582-8 8v4h-1c-1.105 0-2 0.895-2 2v14c0 1.105 0.895 2 2 2h18c1.105 0 2-0.895 2-2v-14c0-1.105-0.895-2-2-2zM11 10c0-2.209 1.791-4 4-4s4 1.791 4 4v4h-8v-4z"/>
-  </symbol>
   
+  <symbol id="icon-dropdown" viewBox="0 0 12 8">
+    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M21.53 20.47l-4.49-4.49A7.94 7.94 0 1016 18l4.49 4.49a.75.75 0 101.06-1.06zM4.75 11a6.25 6.25 0 1112.5 0 6.25 6.25 0 01-12.5 0z" />
+  </symbol>
+
+  <symbol id="icon-user" viewBox="0 0 24 24" fill="none">
+    <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-user2" viewBox="0 0 24 24" fill="none">
+    <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2" />
+    <circle cx="12" cy="8.5" r="3" stroke="currentColor" stroke-width="2" />
+    <path d="M6 19C6 16 9 14.5 12 14.5C15 14.5 18 16 18 19" stroke="currentColor" stroke-width="2" />
+  </symbol>
+
+  <symbol id="icon-logo" viewBox="0 0 31 26">
+    <path d="M0 0H31V26H0V0Z" fill="#FF5733"/>
+    <path d="M5 5H26V21H5V5Z" fill="white"/>
+    <text x="15.5" y="16" text-anchor="middle" font-size="6" fill="#000">LOGO</text>
+  </symbol>
+
 </svg>
 
-<!-- <svg id="search_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-    viewBox="0 0 24 24">
-    <path
-      d="M21.53 20.47l-4.49-4.49A7.94 7.94 0 1016 18l4.49 4.49a.75.75 0 101.06-1.06zM4.75 11a6.25 6.25 0 1112.5 0 6.25 6.25 0 01-12.5 0z" />
-</svg> -->
 

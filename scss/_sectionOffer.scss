@@ -1,51 +1,86 @@
 @use "variables";
 
 .section-offer {
-height: 300px;
-text-align: center;
-padding: 40px;
-background-color: variables.$textColor;
-color: variables.$whiteColor;
+  height: 400px;
+  text-align: center;
+  padding: 40px;
+  background-color: variables.$textColor;
+  color: variables.$whiteColor;
 
- position: relative; 
- 
+  position: relative;
+
   padding: 40px;
   background-color: variables.$textColor;
   color: variables.$whiteColor;
 }
 
-.text-h2 {
-    font-size: 36px;
-}
-
-.offer-link{
-color: variables.$whiteColor;
-font-size: 36px;
-}
-
 .offer-list {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .offer-item {
-    width: 290px;
-    height: 431px;
-    padding: 20px;
+  position: relative;
+  width: 290px;
+  height: 431px;
+  overflow: hidden;
+}
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+.offer-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-color 0.3s ease;
+.offer-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.offer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 178, 53, 0.68);
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.offer-text {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  z-index: 2;
+
+  color: variables.$whiteColor;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.offer-text p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.offer-link {
+  font-size: 24px;
+  color: variables.$whiteColor;
 }
 
 .offer-link::after {
-  content: '→';
+  content: "→";
   font-size: 26px;
   font-weight: 600;
   margin-left: 10px;
@@ -53,22 +88,39 @@ justify-content: center;
   transition: opacity 0.3s ease;
 }
 
-.offer-item:hover,
-.offer-item:focus {
-  background-image: none;
-  background-color: rgba(236, 178, 53, 0.9);
+.offer-item:hover .offer-overlay,
+.offer-item:focus .offer-overlay,
+.offer-item:hover .offer-link::after,
+.offer-item:focus .offer-link::after {
+  opacity: 1;
 }
 
-.bg-item1 {
-background-image: url(../images/bg1.jpg);
+.btn-wrapper{
+  display: flex;
+  max-width: 1300px;
+  justify-content: end;
 }
 
-.bg-item2 {
-background-image: url(../images/bg2.jpg);
-}
-.bg-item3 {
-background-image: url(../images/bg3.jpg);
-}
-.bg-item4 {
-background-image: url(../images/bg4.jpg);
+.btn-offer {
+    width: 243px;
+    height: 90px;
+    font-size: 18px;
+    background-color: rgba(236, 178, 53, 0.7);
+    border: none;
+    color: variables.$textColor;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(236, 178, 53, 1);
+      color: variables.$whiteColor;
+    }
+  }
+
+@media (max-width: 768px) {
+  .btn-offer-wrapper {
+    justify-content: center;
+  }
 }
