@@ -126,3 +126,18 @@
   cursor: pointer;
 }
 
+@media (max-width: 840px) {
+  .blog-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-item {
+    width: 100% !important;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .btn-blog{
+    font-size: 12px;
+  }
+}

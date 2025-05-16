@@ -11,9 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; // расстояние между input и кнопкой
+  gap: 10px; 
   margin-top: 20px;
-  flex-wrap: wrap; // чтобы не ломалось на мобильных
+  flex-wrap: wrap; 
 }
 
 .contact_input {
@@ -53,4 +53,14 @@
       right: 10px;
     }
   }
+}
+
+@media (max-width: 830px) {
+.contact_input{
+  width: 200px;
+  height: 30px;
+}
+.btn-contact{
+  height: 70px;
+}
 }

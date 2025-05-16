@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -19,11 +19,11 @@ ul {
 }
 
 .btn {
-  width: 220px;
+  width: 260px;
   height: 50px;
 
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
 
   padding: 10px;
   border-radius: variables.$borderRadius;
@@ -40,12 +40,6 @@ ul {
   color: variables.$whiteColor;
 }
 
-// .general-text {
-//   margin-top: 10px;
-//   margin-bottom: 30px;
-//   font-size: 36px;
-// }
-
 .text-h2 {
   font-weight: 700;
   font-size: 36px;
@@ -56,22 +50,23 @@ ul {
   margin-bottom: 60px;
 }
 
-// .btn-offer {
-//   position: absolute;
-//   right: 40px;
-//   bottom: -270px;
-//   width: 243px;
-//   height: 90px;
-//   font-size: 24px;
-//   border-radius: variables.$borderRadius;
-//   background-color: variables.$hoverImage;
-//   border: 1px solid variables.$hoverImage;
-//   transition: all 0.3s ease;
-// }
+@media (max-width: 1250px){
+ .offer-item {
+  width: 250px;
+  height: 431px;
+}
+.btn-wrapper {
+  margin-right: 30px;
+}
+}
 
-// .btn-offer:hover,
-// .btn-offer:focus {
-//   background-color: rgb(167, 195, 5);
-//   border: 1px solid rgb(167, 195, 5);
-//   color: variables.$whiteColor;
-// }
+@media (max-width: 1100px){
+ .btn {
+  width: 150px;
+  font-size: 14px;
+ }
+ .text-h2 {
+  font-weight: 500;
+  font-size: 24px;
+ }
+}

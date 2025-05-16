@@ -1,5 +1,5 @@
 const hamburger = document.getElementById('hamburger');
-const nav = document.querySelector('.list');
+const nav = document.querySelector('.nav');
 
 hamburger.addEventListener('click', () => {
     nav.classList.toggle('open');
@@ -38,23 +38,6 @@ const container = document.querySelector(".first-container");
   
   updateCarousel();
 
-// const modal = document.getElementById("modal");
-// const openModalBtn = document.getElementById("openModal");
-// const closeModalBtn = document.querySelector(".close");
-
-// openModalBtn.addEventListener("click", () => {
-//     modal.classList.add("show");
-//     document.body.classList.add("modal-open");
-// });
-
-// closeModalBtn.addEventListener("click", () => {
-//     modal.classList.remove("show");
-//     document.body.classList.remove("modal-open"); 
-// });
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const TABS = document.querySelectorAll('.tab-item');
   const container = document.querySelector('.products-container');
@@ -64,30 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentCat = 'Novinky';
   let showingAll = false;
 
-  // 1. Загрузим JSON
   fetch('./data/product.json')
     .then(res => res.json())
     .then(data => {
-      // Здесь можно валидировать data через JSONLint если надо
       allProducts = data;
       renderTab(currentCat);
     })
     .catch(err => console.error('Chyba při načítání produktů:', err));
 
-  // 2. Функция рендера вкладки
   function renderTab(category) {
     currentCat = category;
     showingAll = false;
     showMoreBtn.style.display = 'block';
 
-    // Фильтруем продукты по категории
     const filtered = allProducts.filter(p => p.category === category);
 
-    // Показываем первые 4
     const toShow = filtered.slice(0, 4);
     renderProducts(toShow);
 
-    // Если продуктов ≤4, скрываем кнопку
     if (filtered.length <= 4) {
       showMoreBtn.style.display = 'none';
     }

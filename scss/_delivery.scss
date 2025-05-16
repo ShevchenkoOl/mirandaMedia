@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   max-width: 250px;
+  flex: 0 1 25%;
   gap: 15px;
   font-size: 18px;
   line-height: 1.4;
@@ -32,4 +33,34 @@
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+}
+
+@media (max-width: 1100px){
+  .delivery-item{
+    font-size: 12px;
+  }
+
+  .delivery-list{
+    gap: 0
+  }
+
+  .delivery-img {
+  width: 30px;
+  height: 30px;
+}
+  
+}
+
+@media (max-width: 1050px) {
+  .delivery-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .delivery-item:not(:last-child) {
+    border-right: none;
+  }
+ .delivery-list{
+    gap: 20px;
+  }
 }

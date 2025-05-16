@@ -34,7 +34,7 @@
 }
 
 .footer-links a {
-  color: #fff;
+  color: variables.$whiteColor;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -57,4 +57,10 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
+}
+
+.footer-soc{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
