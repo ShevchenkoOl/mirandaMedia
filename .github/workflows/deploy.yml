@@ -19,4 +19,4 @@ jobs:
 
       # Команда просто копирует файлы в существующую корзину S3
       - name: Sync S3
-        run: aws s3 sync ./ s3://имя-твоей-корзины --delete
+        run: aws s3 sync ./ s3://s3studystack-mywebsitebuckete09454eb-xxgewm31encx --delete
